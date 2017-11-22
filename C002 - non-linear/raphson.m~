@@ -1,0 +1,15 @@
+function root = raphson(f, in)
+
+root = in;
+prev = in - 1000000;
+
+while abs(root - prev) > 0.0000001 
+    disp 2
+    p
+    f(root + e)
+    d = f(root + e) - f(root);
+    
+    root = prev - f(root) / d;
+    
+end
+    
